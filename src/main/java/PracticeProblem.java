@@ -27,8 +27,10 @@ public class PracticeProblem{
 	    int t = 0;
 	    for (int i2 = 0; i2 < arr.length && t < 3; i2++){
 	        if (arr[i2].equals(i1)){
-	            notfound = i2;
 	            t++;
+	        }
+	        if (t == 3){
+	            notfound = i2;
 	        }
 	    }
 	    return notfound;
